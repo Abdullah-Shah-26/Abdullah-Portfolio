@@ -81,7 +81,7 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
           onTransitionEnd={onOverlayEnd}
           className="fixed inset-0 z-[9999] pointer-events-none"
           style={{
-            background: overlay.dark ? "#0a0a0a" : "#f0f0e8",
+            background: overlay.dark ? "#0a0a0a" : "#FAFAFA",
             clipPath: overlay.expanded
               ? `circle(200vmax at ${clipCenter})`
               : `circle(0px at ${clipCenter})`,

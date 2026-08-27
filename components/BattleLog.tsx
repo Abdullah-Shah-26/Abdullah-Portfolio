@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import {
+  siCodechef,
   siCodeforces,
   siDevpost,
   siGeeksforgeeks,
@@ -10,6 +11,7 @@ import {
 import { BATTLE_LOG } from "@/lib/data";
 
 const PLATFORM_ICONS = {
+  codechef: siCodechef,
   codeforces: siCodeforces,
   devpost: siDevpost,
   geeksforgeeks: siGeeksforgeeks,

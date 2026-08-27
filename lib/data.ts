@@ -116,6 +116,7 @@ export const BATTLE_LOG = {
     {
       title: "#74 Global — CodeChef Starters 226",
       description: "Among 4.2K+ participants in Starters 226.",
+      platform: "codechef",
     },
     {
       title: "#1 Institute — GeeksforGeeks",
