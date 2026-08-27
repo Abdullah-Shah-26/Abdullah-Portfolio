@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Abdullah",
+  title: "Abdullah Shah | Software Engineer",
   description:
-    "Portfolio of Syed Mohammed Abdullah Shah — Full Stack Developer, Competitive Programmer, and Backend Engineer.",
+    "Portfolio of Syed Mohammed Abdullah Shah — Full Stack Developer, Competitive Programmer, and Software Engineer.",
   keywords: [
     "Syed Mohammed Abdullah Shah",
     "Abdullah",
@@ -29,18 +29,18 @@ export const metadata: Metadata = {
   authors: [{ name: "Syed Mohammed Abdullah Shah" }],
   creator: "Syed Mohammed Abdullah Shah",
   openGraph: {
-    title: "Abdullah",
+    title: "Abdullah Shah | Software Engineer",
     description:
-      "Full Stack Developer, Competitive Programmer, and Backend Engineer.",
+      "Full Stack Developer, Competitive Programmer, and Software Engineer.",
     type: "website",
     locale: "en_US",
     siteName: "ABDULLAH Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Abdullah",
+    title: "Abdullah Shah | Software Engineer",
     description:
-      "Full Stack Developer, Competitive Programmer, and Backend Engineer.",
+      "Full Stack Developer, Competitive Programmer, and Software Engineer.",
   },
   robots: {
     index: true,
