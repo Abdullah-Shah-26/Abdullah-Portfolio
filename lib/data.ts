@@ -97,13 +97,13 @@ export const BATTLE_LOG = {
   achievements: [
     {
       title: "Guardian — LeetCode",
-      description: "Maximum rating: 2220.",
+      description: "Maximum rating: 2200+.",
       url: "https://leetcode.com/u/Abdullah_Shah_26/",
       platform: "leetcode",
     },
     {
       title: "Expert — Codeforces",
-      description: "Maximum rating: 1663.",
+      description: "Maximum rating: 1700+.",
       url: "https://codeforces.com/profile/Perfectionist_26",
       platform: "codeforces",
     },
