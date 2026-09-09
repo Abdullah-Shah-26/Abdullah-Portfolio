@@ -39,12 +39,15 @@ export default function TechStack() {
               {category.label}
             </span>
             <div className="flex flex-wrap gap-x-3 gap-y-2">
-              {category.items.split(" · ").map((item) => (
+              {category.items.split(" · ").map((item, index, array) => (
                 <span
                   key={item}
                   className="font-mono text-sm text-[var(--foreground)]/70"
                 >
                   {item}
+                  {index < array.length - 1 && (
+                    <span className="mx-1 text-[var(--accent)]">·</span>
+                  )}
                 </span>
               ))}
             </div>

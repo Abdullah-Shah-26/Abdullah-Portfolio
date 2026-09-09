@@ -38,7 +38,7 @@ export default function BattleLog() {
           EARNED
         </p>
         <h2 className="text-4xl md:text-5xl font-bold tracking-tight">
-          ACHIEVEMENTS
+          Achievements
         </h2>
       </motion.div>
 

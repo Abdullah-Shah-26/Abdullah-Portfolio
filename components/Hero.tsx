@@ -58,13 +58,13 @@ export default function Hero() {
         className="relative z-10 flex flex-col items-center gap-6"
       >
         {/* Name */}
-        <h1 className="text-6xl md:text-8xl font-bold tracking-tight text-[var(--foreground)]">
+        <h1 className="text-6xl sm:text-7xl md:text-8xl font-bold tracking-wide text-[var(--foreground)]">
           {OWNER.name}
         </h1>
 
         {/* Typewriter */}
         <div className="h-8 flex items-center gap-1">
-          <span className="font-mono text-xl md:text-2xl text-[var(--accent)]">
+          <span className="font-mono text-xl sm:text-2xl md:text-2xl text-[var(--accent)]">
             {displayed}
           </span>
           <motion.span
@@ -74,19 +74,19 @@ export default function Hero() {
               repeat: Infinity,
               repeatType: "reverse",
             }}
-            className="font-mono text-xl text-[var(--accent)]"
+            className="font-mono text-xl sm:text-2xl md:text-2xl text-[var(--accent)]"
           >
             |
           </motion.span>
         </div>
 
         {/* Tagline */}
-        <p className="max-w-xl text-[var(--foreground)]/50 font-mono text-sm tracking-wide">
+        <p className="hidden sm:block max-w-2xl text-[var(--foreground)]/50 font-mono text-sm tracking-wide text-center px-4">
           {OWNER.positioning}
         </p>
 
         {/* CTAs */}
-        <div className="flex items-center gap-4 mt-4">
+        <div className="flex flex-row items-center gap-3 mt-4">
           <a
             href="#projects"
             onClick={(e) => {
@@ -95,7 +95,7 @@ export default function Hero() {
                 .querySelector("#projects")
                 ?.scrollIntoView({ behavior: "smooth" });
             }}
-            className="px-6 py-2.5 rounded-sm font-mono text-sm font-semibold tracking-wide border transition-all duration-200"
+            className="px-6 py-2.5 rounded-sm font-mono text-sm font-semibold tracking-wide border transition-all duration-200 text-center"
             style={{
               background: "var(--accent)",
               color: "#0a0a0a",
@@ -123,8 +123,16 @@ export default function Hero() {
                 .querySelector("#contact")
                 ?.scrollIntoView({ behavior: "smooth" });
             }}
-            className="px-6 py-2.5 rounded-sm font-mono text-sm tracking-wide border transition-all duration-200 hover:border-[var(--accent)] hover:text-[var(--accent)]"
+            className="px-6 py-2.5 rounded-sm font-mono text-sm tracking-wide border transition-all duration-200 text-center"
             style={{ borderColor: "var(--border)", color: "var(--foreground)" }}
+            onMouseEnter={(e) => {
+              (e.currentTarget as HTMLAnchorElement).style.borderColor =
+                "var(--accent)";
+            }}
+            onMouseLeave={(e) => {
+              (e.currentTarget as HTMLAnchorElement).style.borderColor =
+                "var(--border)";
+            }}
           >
             Get in Touch
           </a>

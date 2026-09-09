@@ -7,8 +7,9 @@
   --color-accent-dim: var(--accent-dim);
   --color-surface: var(--surface);
   --color-border: var(--border);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans:
+    "SF Pro Display", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --font-mono: "SF Mono", ui-monospace, monospace;
 }
 
 /* Dark mode (default) — Muted purple */
@@ -23,12 +24,12 @@
 
 /* Light mode — toggled via data-theme="light" on <html> */
 [data-theme="light"] {
-  --background: #FAFAFA;
+  --background: #fafafa;
   --foreground: #0a0a0a;
   --accent: #a855f7;
   --accent-dim: #7e22ce;
-  --surface: #F4F4F5;
-  --border: #E4E4E7;
+  --surface: #f4f4f5;
+  --border: #e4e4e7;
 }
 
 * {
@@ -42,7 +43,12 @@ html {
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-geist-sans), Arial, sans-serif;
+  font-family:
+    "SF Pro Display",
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    sans-serif;
   overflow-x: hidden;
 }
 

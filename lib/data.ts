@@ -29,21 +29,27 @@ export const ABOUT = {
   techStack: [
     {
       label: "Languages",
-      items: "C++ · Python · JavaScript · TypeScript · SQL",
+      items: "C · C++ · Python · Java · JavaScript · TypeScript · SQL",
     },
     {
       label: "Frontend",
-      items: "React · Next.js · HTML5 · CSS3 · Tailwind CSS",
+      items: "HTML5 · CSS3 · React · Next.js · Tailwind CSS",
     },
     {
-      label: "Backend & Databases",
-      items:
-        "Node.js · Express.js · FastAPI · PostgreSQL · MySQL · MongoDB · Redis",
+      label: "Backend",
+      items: "Node.js · Express.js · FastAPI · JWT · Socket.IO",
     },
     {
-      label: "Platforms & Tools",
-      items:
-        "Firebase · Supabase · Prisma · Git · GitHub · Docker · Vercel · Postman",
+      label: "Databases & ORM",
+      items: "PostgreSQL · MySQL · MongoDB · Redis · Prisma · Mongoose",
+    },
+    {
+      label: "Cloud & DevOps",
+      items: "Docker · GitHub Actions · Google Cloud · Vercel · Railway",
+    },
+    {
+      label: "Tools",
+      items: "Git · GitHub · Postman · Linux · Firebase · Supabase",
     },
   ],
 };
@@ -108,25 +114,25 @@ export const BATTLE_LOG = {
       platform: "codeforces",
     },
     {
-      title: "#9 Global — LeetCode Biweekly Contest 186",
-      description: "Among 39K+ participants in Biweekly Contest 186.",
+      title: "Global Rank 9 — LeetCode Biweekly Contest 186",
+      description: "Among 39K+ participants.",
       url: "https://leetcode.com/u/Abdullah_Shah_26/",
       platform: "leetcode",
     },
     {
-      title: "#74 Global — CodeChef Starters 226",
-      description: "Among 42K+ participants in Starters 226.",
+      title: "Global Rank 74 — CodeChef Starters 226",
+      description: "Among 42K+ participants.",
       platform: "codechef",
     },
     {
-      title: "#1 Institute — GeeksforGeeks",
+      title: "Institute Rank 1 — GeeksforGeeks",
       description: "Among 1,200+ students on the platform.",
       url: "https://www.geeksforgeeks.org/profile/abdullahshah?tab=activity",
       platform: "geeksforgeeks",
     },
     {
       title: "5× Hackathon Winner — Devpost",
-      description: "Recognition for five winning hackathon projects.",
+      description: "Recognition for winning hackathon projects.",
       url: "https://devpost.com/syedmohammedabdullahshah",
       platform: "devpost",
     },

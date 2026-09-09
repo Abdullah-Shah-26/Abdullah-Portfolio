@@ -1,16 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Abdullah Shah | Software Engineer",
@@ -54,9 +43,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
+    <html lang="en">
       <head>
         <meta name="theme-color" content="#0a0a0a" />
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/appwrite/cdn/fonts/sf-pro.css"
+        />
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/appwrite/cdn/fonts/sf-mono.css"
+        />
       </head>
       <body className="min-h-screen bg-background text-foreground antialiased">
         {children}
