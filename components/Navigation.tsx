@@ -70,7 +70,7 @@ export default function Navigation() {
             href={OWNER.resume}
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden md:block absolute right-[68px] top-1/2 -translate-y-1/2 px-3 py-1.5 rounded-sm border font-mono text-xs tracking-wide transition-colors duration-200 hover:border-[var(--accent)] hover:text-[var(--accent)]"
+            className="hidden md:block absolute right-[68px] top-1/2 -translate-y-1/2 px-4 py-2 rounded-sm border font-mono text-xs tracking-wide transition-colors duration-200 hover:border-[var(--accent)] hover:text-[var(--accent)]"
             style={{ borderColor: "var(--border)", color: "var(--foreground)" }}
           >
             Resume →

@@ -32,23 +32,28 @@ export default function Education() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: i * 0.1 }}
-            className="relative pl-6 border-l-2"
-            style={{ borderColor: "var(--accent)" }}
+            className="relative pl-5 md:pl-6 py-4 pr-4 border-l-2 rounded-sm"
+            style={{
+              borderColor: "var(--accent)",
+              background: "var(--surface)",
+            }}
           >
             <div className="flex flex-col gap-3">
-              <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2">
+              <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 sm:gap-2">
                 <div>
-                  <h3 className="font-semibold text-xl">{entry.institution}</h3>
-                  <p className="font-mono text-sm text-[var(--accent)] mt-1">
+                  <h3 className="font-semibold text-lg md:text-xl leading-tight">
+                    {entry.institution}
+                  </h3>
+                  <p className="font-mono text-xs md:text-sm text-[var(--accent)] mt-1.5">
                     {entry.degree}
                   </p>
                 </div>
-                <div className="sm:text-right font-mono text-xs text-[var(--foreground)]/50">
+                <div className="sm:text-right font-mono text-xs text-[var(--foreground)]/40">
                   <p>{entry.period}</p>
-                  <p>{entry.location}</p>
+                  <p className="hidden sm:block">{entry.location}</p>
                 </div>
               </div>
-              <div className="flex flex-col gap-1 text-sm font-mono text-[var(--foreground)]/60">
+              <div className="flex flex-col gap-1 text-xs md:text-sm font-mono text-[var(--foreground)]/60">
                 <p>{entry.achievement}</p>
               </div>
             </div>

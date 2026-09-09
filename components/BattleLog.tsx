@@ -46,10 +46,10 @@ export default function BattleLog() {
         {BATTLE_LOG.achievements.map((item, i) => (
           <motion.div
             key={i}
-            initial={{ opacity: 0, y: 16 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.4, delay: i * 0.08 }}
+            transition={{ duration: 0.4, delay: i * 0.05 }}
             className="flex flex-col gap-1 p-6 rounded-sm border-l-2"
             style={{
               borderLeftColor: "var(--accent)",

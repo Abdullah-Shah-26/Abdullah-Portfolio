@@ -24,12 +24,12 @@
 
 /* Light mode — toggled via data-theme="light" on <html> */
 [data-theme="light"] {
-  --background: #fafafa;
+  --background: #ffffff;
   --foreground: #0a0a0a;
-  --accent: #a855f7;
+  --accent: #9333ea;
   --accent-dim: #7e22ce;
-  --surface: #f4f4f5;
-  --border: #e4e4e7;
+  --surface: #f8f8f8;
+  --border: #a1a1aa;
 }
 
 * {

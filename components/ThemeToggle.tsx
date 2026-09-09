@@ -28,9 +28,13 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
   } | null>(null);
 
   useEffect(() => {
-    const theme = document.documentElement.getAttribute("data-theme");
-    if (theme === "light") {
+    // Load saved theme from localStorage or default to dark
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "light") {
       setIsDark(false);
+      document.documentElement.setAttribute("data-theme", "light");
+    } else {
+      document.documentElement.setAttribute("data-theme", "dark");
     }
   }, []);
 
@@ -61,10 +65,10 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
     if (!overlay?.expanded) return;
     const next = !isDark;
     setIsDark(next);
-    document.documentElement.setAttribute(
-      "data-theme",
-      next ? "dark" : "light",
-    );
+    const newTheme = next ? "dark" : "light";
+    document.documentElement.setAttribute("data-theme", newTheme);
+    // Save theme to localStorage
+    localStorage.setItem("theme", newTheme);
     setOverlay(null);
     setIsPulling(false);
   }, [isDark, overlay]);
