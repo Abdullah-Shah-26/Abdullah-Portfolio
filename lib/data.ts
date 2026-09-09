@@ -13,7 +13,7 @@ export const OWNER = {
   leetcode: "https://leetcode.com/u/Abdullah_Shah_26/",
   codeforces: "https://codeforces.com/profile/Perfectionist_26",
   resume:
-    "https://drive.google.com/file/d/1m0MePaa6isFo2CAseejIJpBnK-YQmu1u/view?usp=sharing",
+    "https://drive.google.com/file/d/1rfTINLxrpEfzL7fC_CpCpafO9Mll5Lln/view?usp=sharing",
   education:
     "B.Tech in Computer Science and Engineering, Muffakham Jah College of Engineering & Technology (Aug 2024 – May 2028)",
   languages: "Not provided",
